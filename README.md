@@ -2,11 +2,20 @@
 
 Retail data analysis package. This package export workbook excel and can generate slide thanks to c-flash-pptx
 
+<script type="text/javascript"
+  src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js">
+</script>
+
 <div class="mermaid">
 graph TD
     A[Transactions & Clients] -->| Any main function | B(Workbook)
     B -.->| C-Flash-pttx | C(Slides)
 </div>
+<script>
+$(document).ready(function() {
+    mermaid.initialize();
+});
+</script>
 
 ## Installation
 
