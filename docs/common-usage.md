@@ -6,16 +6,21 @@ Many main function have the same data pre-process. In fact Inputs are either tra
 Usually the function pre-process by joining transactions and clients in order to add clients features.
 Then a compute_unitary function will be trigger on this joined input and will allow analysis by pivot features (next section)
 
-<div class="center">
+<script type="text/javascript"
+  src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js">
+</script>
 
-```mermaid
+<div class="mermaid">
 graph TD
     A[Transactions] -.->| Joined if necessary with client | B(Transactions joined)
     B -->| compute_unitary | C(SparkDataFrame)
     C -->| write as sheet | D(Workbook with SparkDataFrame as sheet)
-```
-
 </div>
+<script>
+$(document).ready(function() {
+    mermaid.initialize();
+});
+</script>
 
 ## Pivot features (Group by)
 
