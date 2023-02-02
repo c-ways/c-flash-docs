@@ -2,13 +2,10 @@
 
 Retail data analysis package. This package export workbook excel and can generate slide thanks to c-flash-pptx
 
-<div class="center">
-
-```mermaid
+<div class="mermaid">
 graph TD
     A[Transactions & Clients] -->| Any main function | B(Workbook)
     B -.->| C-Flash-pttx | C(Slides)
-```
 </div>
 
 ## Installation
@@ -51,26 +48,3 @@ pip3 install git+ssh://git@gitlab.com/tools-cways/c-flash-data-analysis.git@mast
 Please, use the **Issue** section from gitlab to report any bugs, progress points.
 
 <u>xavier.lai@c-ways.com</u>
-
-<body>
- <pre><code class="language-mermaid">graph LR
-A--&gt;B
-</code></pre>
-
-<div class="mermaid">graph LR
-A--&gt;B
-</div>
-	
-</body>
-<script>
-var config = {
-    startOnLoad:true,
-    theme: 'forest',
-    flowchart:{
-            useMaxWidth:false,
-            htmlLabels:true
-        }
-};
-mermaid.initialize(config);
-window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-</script>
